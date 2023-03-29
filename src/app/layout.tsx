@@ -1,4 +1,5 @@
-import './globals.css'
+"use client"
+import { Container, CardContainer } from './styles'
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,8 +12,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <Container>
+      <CardContainer>
+        {children}
+      </CardContainer>
+    </Container>
   )
 }
