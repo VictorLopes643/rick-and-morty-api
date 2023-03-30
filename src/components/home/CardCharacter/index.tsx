@@ -1,18 +1,22 @@
 import Image from "next/image"
 import {  Alive, CardInfos, Container, Name, RowAlive, RowName, TextBold, TextNormal } from "./styles"
 
-export  const CardCharacter = () => {
+interface cardCharacterProps {
+    character: any
+}
+
+export  const CardCharacter = ({character}:cardCharacterProps) => {
     return (
         <Container>
-            <Image alt="Avatar" src="https://rickandmortyapi.com/api/character/avatar/24.jpeg" 
+            <Image alt="Avatar" src={character.image} 
                 width={150} height={150} style={{borderRadius: "8px 0 0px 8px"}} />
             <CardInfos>
                 <RowName>
-                    <Name>Giant Judge</Name>
+                        <Name>{character.name}</Name>
                 </RowName>
                 <RowAlive>
                     <Alive />
-                    <TextNormal>Vivo - Humano</TextNormal>
+                    <TextNormal>{character.status} - {character.species}</TextNormal>
                 </RowAlive>
                 <TextBold>
                     Last known location:
