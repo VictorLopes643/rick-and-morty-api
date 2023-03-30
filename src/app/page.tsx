@@ -1,8 +1,10 @@
-import {HomeComponent} from '../components/home/index'
+import HomeComponent from "@/components/home";
 
+export default async function Home() {
 
-export default function Home() {
   return (
-    <HomeComponent />
+    <>
+      <HomeComponent />
+    </>
   )
 }
