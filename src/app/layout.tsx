@@ -5,7 +5,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html>
       <head/>
-      <body style={{height: "100vh",display: "flex",margin: "0",width: "100%"}}>
+      <body style={{minHeight: "100vh",display: "flex",margin: "0",width: "100%"}}>
         <Container>
           <CardContainer>
             <StyledComponentsRegistry>{children}</StyledComponentsRegistry>

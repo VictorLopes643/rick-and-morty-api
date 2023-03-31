@@ -4,10 +4,9 @@ import styled from "styled-components"
 export const Container = styled.div`
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 20rem;
     height: 150px;
     display: flex;
-    /* align-items: center; */
     background: #8E9094;
     border-radius: 8px;
 `;

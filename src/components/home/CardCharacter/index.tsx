@@ -8,8 +8,8 @@ interface cardCharacterProps {
 export  const CardCharacter = ({character}:cardCharacterProps) => {
     return (
         <Container>
-            <Image alt="Avatar" src={character.image} 
-                width={150} height={150} style={{borderRadius: "8px 0 0px 8px"}} />
+            <Image alt="Avatar" src={character.image}
+                width={150} height={150} style={{borderRadius: "8px 0 0px 8px", height:"100%!important"}} />
             <CardInfos>
                 <RowName>
                         <Name>{character.name}</Name>
